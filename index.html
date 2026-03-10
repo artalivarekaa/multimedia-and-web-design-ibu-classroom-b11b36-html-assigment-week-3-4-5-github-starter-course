@@ -13,7 +13,7 @@
   <a href="#main">Skip to main content</a>
   <!-- ====== HEADER ====== -->
   <header>
-      <h1>Arta Livareka</h1>
+      <!-- <h1>Arta Livareka</h1> -->
       <nav>
           <a href="#about">About Me</a> |
           <a href="#skills">My Skills</a> |
@@ -23,6 +23,11 @@
       </nav>
   </header>
 
+  <section id="hero">
+    <h1>Arta Livareka</h1>
+    <p>Computer Engineering Student | Web Developer Enthusiast</p>
+  </section>
+
   <!-- ====== MAIN ====== -->
   <main id="main">
       <!-- About Me Section -->
@@ -30,28 +35,32 @@
           <div class="container">
                 <h2 class="section-title">About Me</h2>
 
-                <figure>
-                    <a href="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ=">
-                        <img src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ=" alt="Portrait of Arta Livareka" width="150">
-                    </a>
-                    <figcaption>
-                        Professional portrait representing my academic and technical journey.
-                    </figcaption>
-                </figure>
+                <div class="about-content">
+                    <figure>
+                        <a href="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ=">
+                            <img src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ=" alt="Portrait of Arta Livareka" width="150">
+                        </a>
+                        <figcaption>
+                            Professional portrait representing my academic and technical journey.
+                        </figcaption>
+                    </figure>
 
-                <p>I'm a computer engineering student at <strong>IBU</strong>, and I'm a <em>part-time</em> employee. I love binge watching YouTube tutorials and videos about different topics.</p>
+                    <div>
+                        <p>I'm a computer engineering student at <strong>IBU</strong>, and I'm a <em>part-time</em> employee. I love binge watching YouTube tutorials and videos about different topics.</p>
 
-                <details>
-                    <summary>Read more about me...</summary>
-                    <p>I am passionate about technology, problem solving, and continuous learning. My interests range from web development to geopolitics and analytical thinking. I enjoy combining creativity with technical precision.
-                    </p>
-                </details>
-                <hr>
+                        <details>
+                            <summary>Read more about me...</summary>
+                            <p>I am passionate about technology, problem solving, and continuous learning. My interests range from web development to geopolitics and analytical thinking. I enjoy combining creativity with technical precision.
+                            </p>
+                        </details>
+                        <hr>
 
-                <blockquote cite="https://www.brainyquote.com/quotes/steve_jobs_416859">
-                    "Study hard what interests you the most in the most undisciplined, irreverent and original manner possible."
-                    <footer>— Richard Feynman</footer>
-                </blockquote>
+                        <blockquote cite="https://www.brainyquote.com/quotes/steve_jobs_416859">
+                            "Study hard what interests you the most in the most undisciplined, irreverent and original manner possible."
+                            <footer>— Richard Feynman</footer>
+                        </blockquote>
+                    </div>
+                </div>
           </div>
       </section>
 
@@ -59,12 +68,14 @@
       <section id="skills">
           <div class="container">
                 <h2 class="section-title">My Skills</h2>
-                <ul>
-                    <li>Playing Guitar</li>
-                    <li>Math Skills</li>
-                    <li>Skateboarding</li>
-                    <li>Skiing</li>
-                </ul>
+                <div class="skills-flex">
+                    <ul>
+                        <li>Playing Guitar</li>
+                        <li>Math Skills</li>
+                        <li>Skateboarding</li>
+                        <li>Skiing</li>
+                    </ul>
+                </div>
 
                 <h3>Technical Skills</h3>
                 <label for="html-skill">HTML</label>
@@ -91,7 +102,30 @@
       <!-- Projects Section -->
       <section id="projects">
           <div class="container">
+
             <h2 class="section-title">My Projects</h2>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <span class="new-badge">NEW</span>
+                    <h3>Portfolio Website</h3>
+                    <p>Personal website built using HTML and CSS to showcase my work.</p>
+                    <a href="#">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Diorit</h3>
+                    <p>A website created for the music group I was part of.</p>
+                    <a href="#">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>AllShawls</h3>
+                    <p>An e-commerce website project for the shop where I currently work.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+
             <table border="1">
                 <thead>
                     <tr>
@@ -124,9 +158,9 @@
 
             <h3>Connect With Me</h3>
             <p>
-                <a href="https://www.youtube.com/c/PlasticPills" target="_blank" aria-label="Visit Plastic Pills YouTube channel (opens in new tab)">Plastic Pills</a> |
-                <a href="https://www.youtube.com/@guitarzoom" target="_blank" aria-label='Visit Guitar Zoom Youtube channel'>Guitar Zoom</a> |
-                <a href='mailto:livareka.arta@ibu.edu.mk' aria-label='Send me an email'>📧</a>
+                <a class="connect-link" href="https://www.youtube.com/c/PlasticPills" target="_blank" aria-label="Visit Plastic Pills YouTube channel (opens in new tab)">Plastic Pills</a> |
+                <a class="connect-link" href="https://www.youtube.com/@guitarzoom" target="_blank" aria-label='Visit Guitar Zoom Youtube channel'>Guitar Zoom</a> |
+                <a class="connect-link" href='mailto:livareka.arta@ibu.edu.mk' aria-label='Send me an email'>📧</a>
             </p>
           </div>
       </section>
@@ -214,6 +248,8 @@
             <p>&copy; 2026 Arta Livareka. All rights reserved.</p>
       </div>
   </footer>
+
+  <a href="#hero" class="back-to-top">↑</a>
 
 </body>
 </html>
